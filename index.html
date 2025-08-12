@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <title>3D HD Driving Game — Local</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="joystick"><div id="stick"></div></div>
+    <div id="hud">
+      <div id="speed">Speed: 0</div>
+      <div id="hint">Drag joystick — pinch to zoom — WASD on desktop</div>
+      <div id="quality">
+        <label><input type="checkbox" id="hdToggle" checked> HD Graphics</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js from CDN (only engine external) -->
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+
+  <!-- The game logic -->
+  <script src="main.js"></script>
+</body>
+</html>
